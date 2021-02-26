@@ -1,0 +1,24 @@
+{
+	"name": "digital-mask",
+	"description": "Easy mask for string",
+	"version": "1.0.0",
+	"author": {
+		"name": "Essle Jaxcate",
+		"email": "me@essle.ru",
+		"url": "https://essle.ru/"
+	},
+	"keywords": [
+		"mask",
+		"pattern",
+		"format",
+		"text",
+		"input"
+	],
+	"license": "MIT",
+	"main": "./index.js",
+	"homepage": "https://github.com/essle/digital-mask#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/essle/digital-mask.git"
+	},
+}
