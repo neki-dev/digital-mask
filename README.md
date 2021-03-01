@@ -19,16 +19,6 @@ console.log(result); // 55-999
 ```jsx
 const mask = require('digital-mask');
 _INPUT_.addEventListener('input', (e) => {
-  if (!e.target.value) {
-    return;
-  }
-  // Adding mask to string
-  const def = '_';
-  e.target.value = mask(e.target.value, _MASK_FORMAT_, def);
-  // Set cursor to first empty char
-  const end = e.target.value.indexOf(def);
-  if (end >= 0) {
-    e.target.setSelectionRange(end, end);
-  }
+  mask.to(e.target, _MASK_FORMAT_);
 });
 ```
