@@ -1,4 +1,4 @@
-## Easy mask for string
+## Easy digital mask for string
 .
 
 * ### Install
