@@ -1,24 +1,36 @@
 {
-	"name": "digital-mask",
-	"description": "Easy mask for string",
-	"version": "1.0.1",
-	"author": {
-		"name": "Essle Jaxcate",
-		"email": "me@essle.ru",
-		"url": "https://essle.ru/"
-	},
-	"keywords": [
+  "name": "digital-mask",
+  "description": "Easy digital mask for string and inputs",
+  "version": "1.0.2",
+  "keywords": [
 		"mask",
 		"pattern",
 		"format",
 		"text",
 		"input"
-	],
-	"license": "MIT",
-	"main": "./index.js",
-	"homepage": "https://github.com/essle/digital-mask#readme",
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Nikita Galadiy",
+    "email": "dev@neki.guru",
+    "url": "https://neki.guru/"
+  },
+  "main": "./dist/index.js",
+  "scripts": {
+    "lint": "eslint ./src --ext .ts --fix",
+    "test": "mocha",
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "@neki-dev/eslint-config": "github:neki-dev/eslint-config",
+    "gulp": "^4.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-uglify": "^3.0.2",
+    "mocha": "^9.2.2",
+    "typescript": "^4.6.3"
+  },
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/essle/digital-mask.git"
+		"url": "git+https://github.com/neki-dev/digital-mask.git"
 	}
 }

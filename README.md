@@ -1,4 +1,9 @@
-## Easy digital mask for string
+## Digital mask
+[![Npm package version](https://badgen.net/npm/v/digital-mask)](https://npmjs.com/package/digital-mask)
+[![Only 32 Kb](https://badge-size.herokuapp.com/neki-dev/digital-mask/master/dist/index.js)](https://github.com/neki-dev/digital-mask/blob/master/dist/index.js)
+
+Easy digital mask for string and inputs
+
 .
 
 * ### Install
@@ -9,16 +14,22 @@ npm i digital-mask
 
 * ### Usage for string
 ```jsx
-const mask = require('digital-mask');
-const result = mask('5a599 9', '__-___');
-console.log(result); // 55-999
+const { applyStringMask } = require('digital-mask');
+
+const result1 = applyStringMask('1234', '___-___');
+console.log(result1); // Output: 123-4__
+
+const result2 = applyStringMask('chars1234and56', '___-___');
+console.log(result2); // Output: 123-456
 ```
 
 * ### Usage for input
 
 ```jsx
-const mask = require('digital-mask');
-_INPUT_.addEventListener('input', (e) => {
-  mask.to(e.target, _MASK_FORMAT_);
+const { applyInputMask } = require('digital-mask');
+
+const input = document.getElementById('inputPhone');
+input.addEventListener('input', () => {
+  applyInputMask(input, '___-___');
 });
 ```
