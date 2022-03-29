@@ -1,5 +1,5 @@
-const assert = require('assert');
-const { applyStringMask } = require('../dist');
+import assert from 'assert';
+import { applyStringMask } from '../src';
 
 describe('apply mask', () => {
   it('should pad empty chars', () => {
@@ -13,5 +13,11 @@ describe('apply mask', () => {
     assert.equal(applyStringMask('12-34', '__-__'), '12-34');
     assert.equal(applyStringMask('chars12and34', '__-__'), '12-34');
     assert.equal(applyStringMask('chars12and', '__-__'), '12-__');
+  });
+
+  it('should format with custom char', () => {
+    const mask = '--- --- ---';
+    assert.equal(applyStringMask('', mask, '--- --- ---'), mask);
+    assert.equal(applyStringMask('ag435hi438httg', mask, '-'), '435 438 ---');
   });
 });
