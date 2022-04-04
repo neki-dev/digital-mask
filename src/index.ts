@@ -58,3 +58,11 @@ export function bindInputMask(input: HTMLInputElement, format: string, def: stri
     input.removeEventListener('input', handler);
   };
 }
+
+// export for commonjs
+// @ts-ignore
+export = {
+  applyStringMask,
+  applyInputMask,
+  bindInputMask,
+};
