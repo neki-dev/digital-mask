@@ -17,7 +17,7 @@
   },
   "main": "./dist/index.js",
   "scripts": {
-    "lint": "eslint ./src ./test --ext .ts --fix",
+    "lint": "eslint ./src ./test --fix",
     "test": "ts-mocha ./test/*.ts",
     "build": "gulp"
   },
