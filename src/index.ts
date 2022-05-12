@@ -59,9 +59,7 @@ export function bindInputMask(input: HTMLInputElement, format: string, def: stri
   };
 }
 
-// export for commonjs
-// @ts-ignore
-export = {
+export default {
   applyStringMask,
   applyInputMask,
   bindInputMask,

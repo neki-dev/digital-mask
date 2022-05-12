@@ -31,4 +31,4 @@ declare const _default: {
     applyInputMask: typeof applyInputMask;
     bindInputMask: typeof bindInputMask;
 };
-export = _default;
+export default _default;
