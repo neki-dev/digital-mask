@@ -7,7 +7,7 @@
  *
  * @returns {string}
  */
-export declare function applyStringMask(source: string, format: string, def?: string): string;
+declare function applyStringMask(source: string, format: string, def?: string): string;
 /**
  * Apply digital mask to input
  *
@@ -15,7 +15,7 @@ export declare function applyStringMask(source: string, format: string, def?: st
  * @param {string} format - Mask for format
  * @param {string} [def] - Сhar from replace
  */
-export declare function applyInputMask(input: HTMLInputElement, format: string, def?: string): void;
+declare function applyInputMask(input: HTMLInputElement, format: string, def?: string): void;
 /**
  * Bind input event and apply digital mask
  *
@@ -25,10 +25,10 @@ export declare function applyInputMask(input: HTMLInputElement, format: string, 
  *
  * @returns {function}
  */
-export declare function bindInputMask(input: HTMLInputElement, format: string, def?: string): () => void;
+declare function bindInputMask(input: HTMLInputElement, format: string, def?: string): () => void;
 declare const _default: {
     applyStringMask: typeof applyStringMask;
     applyInputMask: typeof applyInputMask;
     bindInputMask: typeof bindInputMask;
 };
-export default _default;
+export = _default;

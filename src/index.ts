@@ -7,7 +7,7 @@
  *
  * @returns {string}
  */
-export function applyStringMask(source: string, format: string, def: string = '_'): string {
+function applyStringMask(source: string, format: string, def: string = '_'): string {
   let result = source.replace(/\D+/g, '');
   for (let i = 0; i < format.length; i += 1) {
     if (result[i] === undefined || (format[i] !== def && format[i] !== result[i])) {
@@ -26,7 +26,7 @@ export function applyStringMask(source: string, format: string, def: string = '_
  * @param {string} format - Mask for format
  * @param {string} [def] - Сhar from replace
  */
-export function applyInputMask(input: HTMLInputElement, format: string, def: string = '_'): void {
+function applyInputMask(input: HTMLInputElement, format: string, def: string = '_') {
   if (!input.value) {
     return;
   }
@@ -48,7 +48,7 @@ export function applyInputMask(input: HTMLInputElement, format: string, def: str
  *
  * @returns {function}
  */
-export function bindInputMask(input: HTMLInputElement, format: string, def: string = '_'): () => void {
+function bindInputMask(input: HTMLInputElement, format: string, def: string = '_'): () => void {
   const handler = () => {
     applyInputMask(input, format, def);
   };
@@ -59,7 +59,9 @@ export function bindInputMask(input: HTMLInputElement, format: string, def: stri
   };
 }
 
-export default {
+// export for commonjs
+// @ts-ignore
+export = {
   applyStringMask,
   applyInputMask,
   bindInputMask,
