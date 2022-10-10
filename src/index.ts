@@ -5,7 +5,7 @@
  * @param {string} format - Mask for format
  * @param {string} [def] - Сhar from replace
  *
- * @returns {string}
+ * @returns {string} - Formatted string
  */
 export function applyStringMask(source: string, format: string, def: string = '_'): string {
   let result = source.replace(/\D+/g, '');
@@ -46,7 +46,7 @@ export function applyInputMask(input: HTMLInputElement, format: string, def: str
  * @param {string} format - Mask for format
  * @param {string} [def] - Сhar from replace
  *
- * @returns {function}
+ * @returns {function} - Unbind function
  */
 export function bindInputMask(input: HTMLInputElement, format: string, def: string = '_'): () => void {
   const handler = () => {

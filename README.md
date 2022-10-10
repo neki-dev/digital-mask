@@ -34,7 +34,7 @@ applyStringMask(
  */
 applyInputMask(
   // Input
-  input: string,
+  input: HTMLInputElement,
   // Mask for format
   format: string,
   // Сhar from replace
@@ -46,7 +46,7 @@ applyInputMask(
  */
 bindInputMask(
   // Input
-  input: string,
+  input: HTMLInputElement,
   // Mask for format
   format: string,
   // Сhar from replace

@@ -5,7 +5,7 @@
  * @param {string} format - Mask for format
  * @param {string} [def] - Сhar from replace
  *
- * @returns {string}
+ * @returns {string} - Formatted string
  */
 export declare function applyStringMask(source: string, format: string, def?: string): string;
 /**
@@ -23,7 +23,7 @@ export declare function applyInputMask(input: HTMLInputElement, format: string, 
  * @param {string} format - Mask for format
  * @param {string} [def] - Сhar from replace
  *
- * @returns {function}
+ * @returns {function} - Unbind function
  */
 export declare function bindInputMask(input: HTMLInputElement, format: string, def?: string): () => void;
 declare const _default: {
