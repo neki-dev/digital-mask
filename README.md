@@ -1,6 +1,6 @@
-## Digital mask
+## ⚡ Digital mask
 [![Npm package version](https://badgen.net/npm/v/digital-mask)](https://npmjs.com/package/digital-mask)
-[![Small size](https://badge-size.herokuapp.com/neki-dev/digital-mask/master/dist/index.js)](https://github.com/neki-dev/digital-mask/blob/master/dist/index.js)
+[![Small size](https://img.badgesize.io/neki-dev/digital-mask/master/dist/index.js)](https://github.com/neki-dev/digital-mask/blob/master/dist/index.js)
 [![Testing](https://github.com/neki-dev/digital-mask/actions/workflows/test.yml/badge.svg)](https://github.com/neki-dev/digital-mask/actions/workflows/test.yml)
 [![Building](https://github.com/neki-dev/digital-mask/actions/workflows/build.yml/badge.svg)](https://github.com/neki-dev/digital-mask/actions/workflows/build.yml)
 
@@ -61,8 +61,11 @@ const { applyStringMask } = require('digital-mask');
 const result1 = applyStringMask('1234', '___-___');
 console.log(result1); // Output: 123-4__
 
-const result2 = applyStringMask('chars1234and56', '___-___');
-console.log(result2); // Output: 123-456
+const result2 = applyStringMask('1234', '***-***', '*');
+console.log(result2); // Output: 123-4**
+
+const result3 = applyStringMask('chars1234and56', '___-___');
+console.log(result3); // Output: 123-456
 ```
 
 * ### Example for input

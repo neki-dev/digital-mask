@@ -4,6 +4,7 @@ import { applyStringMask } from '../dist';
 describe('apply mask', () => {
   it('should pad empty chars', () => {
     const mask = '__-__';
+
     assert.equal(applyStringMask('chars12and34', mask).length, mask.length);
     assert.equal(applyStringMask('', mask), mask);
     assert.equal(applyStringMask('12', mask), '12-__');
@@ -17,7 +18,9 @@ describe('apply mask', () => {
 
   it('should format with custom char', () => {
     const mask = '--- --- ---';
-    assert.equal(applyStringMask('', mask, '--- --- ---'), mask);
-    assert.equal(applyStringMask('ag435hi438httg', mask, '-'), '435 438 ---');
+    const char = '-';
+
+    assert.equal(applyStringMask('', mask, char), mask);
+    assert.equal(applyStringMask('ag435hi438httg', mask, char), '435 438 ---');
   });
 });
