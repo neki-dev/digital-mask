@@ -1,7 +1,7 @@
 {
   "name": "digital-mask",
   "description": "Easy digital mask for string and inputs",
-  "version": "1.1.7",
+  "version": "1.2.0",
   "keywords": [
     "mask",
     "pattern",
@@ -17,21 +17,17 @@
   },
   "main": "./dist/index.js",
   "scripts": {
-    "lint": "eslint \"src/**/*.ts\" --fix",
     "test": "ts-mocha ./test/*.ts",
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "@types/mocha": "^10.0.0",
-    "eslint": "^8.25.0",
-    "eslint-config-neki": "^1.0.3",
-    "mocha": "^10.0.0",
-    "terser-webpack-plugin": "^5.3.6",
-    "ts-loader": "^9.4.1",
-    "ts-mocha": "^10.0.0",
-    "typescript": "^4.8.4",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "@types/mocha": "10.0.7",
+    "mocha": "10.7.0",
+    "ts-loader": "9.5.1",
+    "ts-mocha": "10.0.0",
+    "typescript": "5.5.4",
+    "webpack": "5.93.0",
+    "webpack-cli": "5.1.4"
   },
   "repository": {
     "type": "git",
