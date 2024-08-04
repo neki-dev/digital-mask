@@ -16,19 +16,8 @@ export declare function applyStringMask(source: string, format: string, def?: st
  * @param {string} [def] - Сhar from replace
  */
 export declare function applyInputMask(input: HTMLInputElement, format: string, def?: string): void;
-/**
- * Bind input event and apply digital mask
- *
- * @param {HTMLInputElement} input - Input
- * @param {string} format - Mask for format
- * @param {string} [def] - Сhar from replace
- *
- * @returns {function} - Unbind function
- */
-export declare function bindInputMask(input: HTMLInputElement, format: string, def?: string): () => void;
 declare const _default: {
     applyStringMask: typeof applyStringMask;
     applyInputMask: typeof applyInputMask;
-    bindInputMask: typeof bindInputMask;
 };
 export default _default;

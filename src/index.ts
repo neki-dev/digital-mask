@@ -39,28 +39,7 @@ export function applyInputMask(input: HTMLInputElement, format: string, def: str
   }
 }
 
-/**
- * Bind input event and apply digital mask
- *
- * @param {HTMLInputElement} input - Input
- * @param {string} format - Mask for format
- * @param {string} [def] - Сhar from replace
- *
- * @returns {function} - Unbind function
- */
-export function bindInputMask(input: HTMLInputElement, format: string, def: string = '_'): () => void {
-  const handler = () => {
-    applyInputMask(input, format, def);
-  };
-
-  input.addEventListener('input', handler);
-  return () => {
-    input.removeEventListener('input', handler);
-  };
-}
-
 export default {
   applyStringMask,
   applyInputMask,
-  bindInputMask,
 };

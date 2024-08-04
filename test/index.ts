@@ -1,5 +1,5 @@
 import assert from 'assert';
-import { applyStringMask } from '../dist';
+import { applyStringMask } from '../src';
 
 describe('apply mask', () => {
   it('should pad empty chars', () => {
